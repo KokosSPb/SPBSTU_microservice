@@ -57,7 +57,7 @@
 Аналогично для создания группы  
 Для получения списка студентов из одной группы по id группы требуется выполнить GET запрос `http://127.0.0.1/RESTFull/list/id`  
 <img width="974" alt="image" src="https://github.com/KokosSPb/SPBSTU_microservice/assets/159871130/094bf4a1-30a5-4f91-a494-8954672d50a0">  
-А для получения списка студентов из одной группы по её номеру потребуется выполнить POST запрос `http://127.0.0.1/RESTFull/list`  
+А для получения списка студентов из одной группы по её номеру потребуется выполнить POST запрос `http://127.0.0.1/RESTFull/list` 
 ![image](https://github.com/KokosSPb/SPBSTU_microservice/assets/159871130/33455d3d-f0cf-4c89-8723-9fcbae8999d3)  
 Для изменения номера группы нужно отправить PATCH запрос на соответсвующий адрес `http://127.0.0.1/RESTFull/students/id`, но данные при этом придётся передавтаь в виде JSON в RAW  
 ![image](https://github.com/KokosSPb/SPBSTU_microservice/assets/159871130/d9b0d49f-3b50-463a-8e4a-4911490703fc)
