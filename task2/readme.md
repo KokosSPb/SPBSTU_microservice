@@ -26,6 +26,6 @@
 - 
 # Создание таблиц в базе данных
 Создание таблицы списка групп
-`CREATE TABLE restfull.gr ( id INT NOT NULL AUTO_INCREMENT , gr VARCHAR(25) NOT NULL , caption TEXT NOT NULL , PRIMARY KEY (id)) ENGINE = InnoDB;`
+`CREATE TABLE restfull.gr ( id INT NOT NULL AUTO_INCREMENT , gr VARCHAR(25) NOT NULL , caption TEXT NOT NULL , PRIMARY KEY (id)) ENGINE = InnoDB;`  
 Создание таблицы списка студентов
 `CREATE TABLE restfull.students ( id INT NOT NULL AUTO_INCREMENT , name VARCHAR(25) NOT NULL , fname VARCHAR(25) NOT NULL , lname VARCHAR(25) NOT NULL , gr INT NOT NULL , PRIMARY KEY (id)) ENGINE = InnoDB;`
