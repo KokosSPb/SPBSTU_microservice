@@ -40,3 +40,18 @@
 # Работа с созданной API на примере использования программы Postman
 Вид базы таблицы `students` <p align="center"><img width=60% src = "img/myst.png"></p>
 и таблицы `gr` <p align="center"><img width=60% src = "img/mygr.png"></p>
+Для получения полного списка студентов необходимо отправить GET запрос ```http://127.0.0.1/RESTFull/students```
+<p align="center"><img width=60% src = "img/getsts.png"></p>
+Для получения информации о конкретном студенте достаточно добавить его id через символ `/`
+<p align="center"><img width=60% src = "img/getst.png"></p>
+Аналогично для получения списка групп  только запрос будет ```http://127.0.0.1/RESTFull/groups```
+<p align="center"><img width=60% src = "img/getgrs.png"></p>
+и информации по конкретной группе
+<p align="center"><img width=60% src = "img/getgr.png"></p>
+При этом, если мы захотим получить информацию о студенте или группе которых не существует - получим ответ с ошибкой и кодом ответа 404
+<p align="center"><img width=60% src = "img/getgre.png"></p>
+Для добавления студента или группу в таблицы необходимо выполнить POST запрос на соответсвующие аналогичные адреса ```http://127.0.0.1/RESTFull/students``` или ```http://127.0.0.1/RESTFull/groups```, где через form-data необходимо передать требуемые данные для записи в базу
+<p align="center"><img width=60% src = "img/postst.png"></p>
+При этом мы полчим ответ с id новой записи и кодом ответа 201, а в базе появится соотвествующая запись
+<p align="center"><img width=60% src = "img/mystadd.png"></p>
+Аналогично для создания группы  
